@@ -1,37 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.section {
+  background: rgb(74, 64, 233);
+  background: linear-gradient(
+    138deg,
+    rgba(74, 64, 233, 1) 0%,
+    rgba(173, 199, 72, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100vh;
+}
 .conteiner {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "coffeprice coffebuttons"
-    "coffeeimg questionmoney"
-    "coffeeimg change";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .coffeprice {
-    grid-area: coffeprice; 
-}
-.coffebuttons {
-    grid-area: coffebuttons;
-    grid-column: auto;
-    display: grid;
+  font-size: 28px;
+  text-align: center;
 }
 button {
-    border-radius: 50px;
-    padding: 5px;
-    margin: 5px;
-    max-width: 200px;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+}
+.coffebuttons {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+.coffebuttons > button {
+  font-size: 18px;
+}
+.coffeeimg > img {
+  background: url(iconmonstr-coffee-15.svg) no-repeat;
+  background-size: contain;
+  width: 50px;
 }
 .questionmoney {
-    grid-area: questionmoney;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #cash {
-    max-width: 110px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 50px;
+}
+.labelCash{
+  font-size: 30px;
+}
+#ok > img {
+  width: 80px;
+}
+#cancel > img {
+  width: 80px;
 }
 .change {
-    grid-area: change;
-}
-.coffeeimg {
-    grid-area: coffeeimg;
-    background: url(iconmonstr-coffee-15.svg) no-repeat;
-    background-size: contain;
+  font-size: 26px;
+  text-align: center;
+  font-size: 30px;
 }

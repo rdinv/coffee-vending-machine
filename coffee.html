@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee vending machine</title>
-  <script src="coffee.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="conteiner">
-    <div class="coffeprice" id="screen"></div>
-    <div class="coffebuttons">
-      <button id="latte">Латте</button>
-      <button id="capuchino">Капучино</button>
-      <button id="americano">Американо</button>
-      <button id="chocolate">Горячий шоколад</button>
-      <button id="tea">Чай</button>
-      <button id="espresso">Эспрессо</button>
-      <button id="mocha">Мокко</button>
-    </div>
-    <div class="coffeeimg"></div>
-    <div class="questionmoney">
-      <p>Insert money<input type="text" name="moneyask" id="cash"></p>
-      <button id="ok">Ввести деньги</button>
-      <button id="cancel">Отмена</button>
-    </div>
-    <div class="change">
-      <div>
-        Change:
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee vending machine</title>
+    <script src="coffee.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="conteiner">
+        <div class="coffeprice" id="screen"></div>
+        <div class="coffebuttons">
+          <button id="latte">Latte</button>
+          <button id="capuchino">Cappuccino</button>
+          <button id="americano">Americano</button>
+          <button id="chocolate">Hot chocolate</button>
+          <button id="tea">Tea</button>
+          <button id="espresso">Espresso</button>
+          <button id="mocha">Mocha</button>
+        </div>
+        <div class="coffeeimg">
+          <img src="/img/iconmonstr-coffee-15.svg" alt="cofeeCap" />
+        </div>
+        <div class="questionmoney">
+          <label class='labelCash' for="cash">Insert money</label>
+          <input type="number" name="moneyask" id="cash" />
+        </div>
+        <div class="insertButtons">
+          <button id="ok">
+            <img src="/img/insert-coin.png" alt="insert-coin" />
+          </button>
+          <button id="cancel">
+            <img src="/img/cancel.png" alt="insert-coin" />
+          </button>
+        </div>
+        <div class="change">
+          <div>Change:</div>
+          <div id="change-amount"></div>
+        </div>
       </div>
-      <div id="change-amount"></div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
