@@ -26,7 +26,7 @@ window.onload = function () {
     pickDrink("americano");
   });
   chocolate.addEventListener("click", () => {
-    pickDrink("chocolate");
+    pickDrink("hot chocolate");
   });
   tea.addEventListener("click", () => {
     pickDrink("tea");
